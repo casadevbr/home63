@@ -1,0 +1,76 @@
+
+.vantagens-container{
+    width: 100%;
+    height: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* padding: 5px 20px; */
+    /* background-color: #0e1020; */
+    background-color: #fff;
+    /* background-color: #293065; */
+    max-width: 1920px;
+    border-top: solid 1px #1f1e1eae;
+    border-bottom: solid 1px #1f1e1eae;
+}
+.vantagens-container .page-size{
+    width: 100%;
+    /* max-width: 100%; */
+    /* height: calc(100% - 40px); */
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    /* background-color: #0e1020; */
+    background-color: #fff;
+    /* background-color: #293065; */
+    padding: 0;
+/* border-top: solid 1px #1e1f1f;*/
+    /* border-bottom: solid 1px #1e1f1f; */
+}
+.vantagens-container .page-size .vantagem{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    /* color: rgb(17, 206, 0); */
+    color: #1e1f1f;
+    font-weight: bold;
+    letter-spacing: .5px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    left: 0;
+}
+.vantagens-container .page-size .vantagem:not(.active){
+    top: 0;
+    left: -100%;
+}
+.vantagens-container .vantagens .vantagem i{
+    font-size: 18px;
+    color: #1e1f1f;
+}
+
+
+@media screen and (max-width: 900px){
+    .vantagens-container{
+        height: 25px;
+        background: none;
+        border-top: none;
+        border-bottom: none;
+    }
+    
+    .vantagens-container .page-size{
+        margin: 0px 20px;
+        border-radius: 0px 0px 8px 8px;
+        border: solid 1px #1e1f1fae;
+    }
+    .vantagens-container .page-size .vantagem{
+        font-size: 10px;
+    }
+    .vantagens-container .vantagens .vantagem i{
+        font-size: 14px;
+        color: #fff;
+    }
+}

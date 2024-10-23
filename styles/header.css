@@ -1,0 +1,252 @@
+.faixa-topo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: #1f1e1e;
+    /* background-color: #161a36; */
+    color: #fff;
+    /* font-size: 14px; */
+    font-size: 11px;
+    /* font-style: italic; */
+    letter-spacing: 1px;
+}
+.faixa-topo ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+.faixa-topo#vendas-corporativas{
+    background-color: #191e47;
+    /* background-color: #1d224b; */
+}
+.faixa-topo #br{
+    color: #00c224;
+}
+.faixa-topo #as{
+    color: #ffcc00;
+}
+.faixa-topo #il{
+    color: #5563CF;
+}
+.faixa-topo a{
+    color: #ffffff;
+}
+.faixa-topo#logo-mobile{
+    display: none;
+    padding: 10px 20px;
+    justify-content: center;
+    gap: 10px;
+    background-color: #fff;
+    border-bottom: solid 1px #1f1e1e;
+}
+.faixa-topo#logo-mobile .line{
+    flex-grow: 1;
+    border: solid 1px #ffffff2c;
+}
+.faixa-topo#logo-mobile .logo{
+    height: 30px;
+}
+.faixa-topo#logo-mobile ul{
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 0px 0px;
+}
+.faixa-topo#logo-mobile ul li{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.faixa-topo#logo-mobile ul li i{
+    font-size: 20px;
+    line-height: 20px;
+}
+.faixa-topo#vantagens{
+    font-weight: bold;
+    font-style: normal;
+    font-size: 15px;
+}
+.faixa-topo#vantagens span{
+    color: #34df34;
+}
+
+
+header{
+    background-color: #fff;
+    border-bottom: solid 1px #1f1e1e41;
+    width: 100%;
+    position: sticky;
+    top: -1px;
+    z-index: 99;
+}
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px 20px;
+}
+.logo{
+    height: 45px;
+}
+.barra-de-pesquisa{
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* border-radius: 5px; */
+    background-color: #fff;
+    color: #1f1e1e;
+    font-size: 15px;
+    letter-spacing: 1px;
+    flex-grow: 1;
+    border-bottom: solid 1px #1f1e1eae;
+}
+.barra-de-pesquisa .icones i{
+    color: #1f1e1e;
+    font-size: 20px;
+}
+#desktop-search{
+    display: block;
+}
+#mobile-search{
+    display: none;
+}
+.user-icons{
+    color: #1f1e1e;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.user-btn{
+    font-size: 25px;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+}
+.btn-desc{
+    line-height: 15px;
+    font-size: 14px;
+}
+.btn-desc span{
+    font-weight: 700;
+}
+.user-icons .bi-person-fill{
+    font-size: 30px;
+}
+.user-icons .bi-heart-fill{
+    font-size: 25px;
+}
+.user-icons .bi-cart-fill{
+    font-size: 25px;
+}
+
+
+.sub-header{
+    /* background-color: #565656; */
+    font-size: 14px;
+    align-items: start;
+}
+.sub-header-content{
+    padding: 5px 20px;
+    display: flex;
+    gap: 20px;
+}
+.categorias{
+    display: flex;
+    font-weight: bold;
+    gap: 8px;
+    align-items: center;
+}
+.sub-header-content ul{
+    flex-grow: 1;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    /* color: #696969; */
+    color: #1f1e1e;
+    font-weight: 600;
+}
+
+
+
+@media screen and (max-width: 1145px) {
+    .sub-header .sub-header-content #epi{
+        display: none;
+    }
+}
+@media screen and (max-width: 1090px) {
+    #vendas-corporativas #frete-gratis{
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 1000px) {
+    .btn-desc{
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 990px) {
+    .faixa-topo{
+        display: none;
+    }
+    .sub-header .sub-header-content{
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 800px) {
+    .user-icons{
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 450px) {
+    #desktop-search{
+        display: none;
+    }
+    #mobile-search{
+        display: block;
+    }
+    .logo{
+        /* display: none; */
+        height: 30px;
+    }
+    .faixa-topo{
+        display: none;
+    }
+    .header-content{
+        padding: 12px 20px;
+    }
+    .barra-de-pesquisa{
+        height: 40px;
+        font-size: 14px;
+    }
+    .barra-de-pesquisa .icones i{
+        font-size: 19px;
+    }
+    /* .faixa-topo#logo-mobile{
+        display: flex;
+        text-align: center;
+    } */
+    /* .faixa-topo#logo-mobile .logo{
+        display: block;
+    } */
+}
+@media screen and (max-width: 350px) {
+    .header-content{
+        padding: 10px 20px;
+    }
+    .barra-de-pesquisa{
+        height: 35px;
+        font-size: 13px;
+    }
+    .barra-de-pesquisa .icones i{
+        font-size: 17px;
+    }
+}
